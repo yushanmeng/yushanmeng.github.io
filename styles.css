@@ -362,6 +362,83 @@ a:focus-visible {
   padding-bottom: 76px;
 }
 
+.teaching-section {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: clamp(44px, 7vw, 76px);
+  padding-block: 46px 76px;
+  border-top: 1px solid var(--line);
+}
+
+.course-list {
+  min-width: 0;
+}
+
+.course-item {
+  padding-block: 27px 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.course-item:first-child {
+  padding-top: 0;
+}
+
+.course-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.course-heading-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.course-role,
+.course-term,
+.course-details {
+  margin: 0;
+}
+
+.course-role {
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.course-item h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.35;
+}
+
+.course-item h3 span {
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+.course-term {
+  flex: none;
+  padding-top: 20px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.course-details {
+  margin-top: 10px;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+}
+
 .research-section .research-list {
   border-top: 0;
 }
@@ -468,6 +545,22 @@ a:focus-visible {
     padding-block: 38px;
   }
 
+  .teaching-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-block: 38px 58px;
+  }
+
+  .course-heading-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .course-term {
+    padding-top: 0;
+    white-space: normal;
+  }
+
   .research-section:last-of-type {
     padding-bottom: 58px;
   }
@@ -487,11 +580,11 @@ a:focus-visible {
   }
 
   .site-nav {
-    gap: 14px;
+    gap: 12px;
   }
 
   .site-nav a {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
   }
 
   .profile-links {
@@ -507,6 +600,20 @@ a:focus-visible {
   .section-title-row {
     flex-direction: column;
     gap: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .wordmark {
+    font-size: 0.82rem;
+  }
+
+  .site-nav {
+    gap: 9px;
+  }
+
+  .site-nav a {
+    font-size: 0.66rem;
   }
 }
 

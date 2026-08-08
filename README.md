@@ -17,6 +17,7 @@ Then visit [http://localhost:8000](http://localhost:8000).
 
 - Profile, affiliation, and homepage research summary: `index.html`
 - Working papers and research projects: `research.html`
+- Teaching experience: `teaching.html`
 - Shared layout and visual styling: `styles.css`
 
 The web-ready portrait is stored at `assets/yushan-meng-portrait.jpg`, with a

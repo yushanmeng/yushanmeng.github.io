@@ -270,33 +270,41 @@ a:focus-visible {
   gap: 30px;
 }
 
-.research-disclosure > summary {
+.research-toggle {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  flex: none;
+  place-items: center;
+  align-self: center;
+  margin: -0.3rem -0.35rem -0.3rem 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: var(--accent);
+  background: transparent;
   cursor: pointer;
-  list-style: none;
 }
 
-.research-disclosure > summary::-webkit-details-marker {
+.research-toggle[hidden] {
   display: none;
 }
 
-.research-disclosure > summary::marker {
-  content: "";
+.research-toggle:hover {
+  background: var(--accent-soft);
 }
 
-.research-disclosure > summary::after {
+.research-toggle::after {
   width: 0.46rem;
   height: 0.46rem;
-  flex: none;
-  align-self: center;
-  margin-right: 0.2rem;
-  border-right: 1.5px solid var(--accent);
-  border-bottom: 1.5px solid var(--accent);
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
   content: "";
   transform: rotate(45deg);
   transition: transform 160ms ease;
 }
 
-.research-disclosure[open] > summary::after {
+.research-toggle[aria-expanded="true"]::after {
   transform: rotate(225deg);
 }
 
@@ -575,7 +583,7 @@ a:focus-visible {
     gap: 7px;
   }
 
-  .research-disclosure > summary.paper-heading-row {
+  .paper-heading-row--toggle {
     flex-direction: row;
     gap: 16px;
   }

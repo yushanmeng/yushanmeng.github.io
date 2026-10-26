@@ -246,10 +246,12 @@ a:focus-visible {
   font-size: 1.8rem;
 }
 
-.quiet-link {
+.section-heading-link {
   color: var(--accent);
-  font-size: 0.77rem;
-  font-weight: 700;
+}
+
+.section-title-row--standalone {
+  margin-bottom: 0;
 }
 
 .research-list {

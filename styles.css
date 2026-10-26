@@ -270,6 +270,36 @@ a:focus-visible {
   gap: 30px;
 }
 
+.research-disclosure > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.research-disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+
+.research-disclosure > summary::marker {
+  content: "";
+}
+
+.research-disclosure > summary::after {
+  width: 0.46rem;
+  height: 0.46rem;
+  flex: none;
+  align-self: center;
+  margin-right: 0.2rem;
+  border-right: 1.5px solid var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  content: "";
+  transform: rotate(45deg);
+  transition: transform 160ms ease;
+}
+
+.research-disclosure[open] > summary::after {
+  transform: rotate(225deg);
+}
+
 .research-item h3 {
   margin: 0;
   font-family: var(--serif);
@@ -543,6 +573,11 @@ a:focus-visible {
     align-items: flex-start;
     flex-direction: column;
     gap: 7px;
+  }
+
+  .research-disclosure > summary.paper-heading-row {
+    flex-direction: row;
+    gap: 16px;
   }
 
   .research-section {

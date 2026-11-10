@@ -172,13 +172,41 @@
           </article>
 
           <article class="research-item">
-            <div class="paper-heading-row">
+            <div class="paper-heading-row paper-heading-row--toggle">
               <h3>Optimal Headline Design</h3>
+              <button
+                class="research-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="optimal-headline-design-details"
+                aria-label="Show details for Optimal Headline Design"
+                hidden
+              ></button>
             </div>
             <p class="paper-meta">
               with <a href="https://scholar.google.com/citations?user=0KGZBz8AAAAJ&amp;hl=de" rel="external noopener">Susanne Goldlücke</a>
               and <a href="https://federicoinnocenti.com/" rel="external noopener">Federico Innocenti</a>
             </p>
+            <div id="optimal-headline-design-details" class="paper-details">
+              <p class="paper-summary">
+                We study the Bayesian persuasion problem of a sender, such as a news
+                outlet, who seeks both to attract the receiver's attention and to
+                persuade her. The sender commits to an article, which is an experiment
+                about the state, and a headline, which is a garbling of the article.
+                The receiver observes the headline for free and can read the article
+                at a cost. This is equivalent to the sender randomizing over experiments
+                and the receiver paying to learn which one generated its realization.
+                If the sender cares only about attention, the article is fully
+                revealing, and the headline gives away as little as possible. If he
+                cares only about persuasion, the article is redundant. When both
+                motives are present, they conflict only if the information required
+                for persuasion is not worth reading. With two states, as clicks
+                become more valuable, the sender adds truth to the article and makes
+                the headline less informative, trading persuasion for clicks. The
+                receiver is better off facing a sender who cares only about persuasion
+                if the sender knows the reading cost, but not necessarily otherwise.
+              </p>
+            </div>
           </article>
 
           <article class="research-item">
